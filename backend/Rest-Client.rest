@@ -1,0 +1,47 @@
+### RDP ESG /VIEWS/MEASURES-FULL: Returns scores and measures with full history
+GET http://localhost/api/products
+Content-Type: application/json
+Authorization: Bearer <access_token>
+
+### Get a single product
+GET http://localhost/api/products/1008
+Content-Type: application/json
+Authorization: Bearer <access_token>
+
+
+### Update a single product
+PATCH  http://localhost/api/products/1008
+Content-Type: application/json
+Authorization: Bearer <access_token>
+
+{  
+  "name": "Product H updated",
+  "developers": [
+    "Bob Johnson",
+    "Sarah Lee",
+    "David Kim",
+    "Emily Chen",
+    "Alex Brown"
+  ],
+  "ownerName": "Jane Smith",
+  "scrumMasterName": "John Doe",
+  "startDate": "2023/08/01",
+  "methodology": "Agile"
+}
+
+### Post a new product
+POST http://localhost/api/products
+Content-Type: application/json
+
+{
+  "name": "New Added Product",
+  "developers": ["John Smith", "Jane Doe"],
+  "ownerName": "Bob Johnson",
+  "scrumMasterName": "Alice Lee",
+  "startDate": "2023-04-01"
+}
+
+### DELETE a product
+DELETE  http://localhost/api/products/1016
+Content-Type: application/json
+Authorization: Bearer <access_token>

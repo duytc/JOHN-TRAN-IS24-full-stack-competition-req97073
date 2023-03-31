@@ -1,0 +1,95 @@
+table {
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  th,
+  td {
+    padding: 8px;
+    text-align: left;
+    border: 1px solid #ddd;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    th,
+    td {
+      padding: 6px;
+      font-size: 12px;
+    }
+  }
+  
+
+  /* Style for the edit and delete buttons */
+.btn {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  color: #fff;
+  background-color: #337ab7;
+  border-color: #2e6da4;
+}
+
+.btn:hover,
+.btn:focus,
+.btn:active,
+.btn.active,
+.open .dropdown-toggle.btn {
+  color: #fff;
+  background-color: #286090;
+  border-color: #204d74;
+}
+
+/* Style for the edit button */
+.edit-btn {
+  background-color: #5cb85c;
+  border-color: #4cae4c;
+}
+
+.edit-btn:hover,
+.edit-btn:focus,
+.edit-btn:active,
+.edit-btn.active,
+.open .dropdown-toggle.edit-btn {
+  background-color: #449d44;
+  border-color: #398439;
+}
+
+/* Style for the delete button */
+.delete-btn {
+  background-color: #d9534f;
+  border-color: #d43f3a;
+}
+
+.delete-btn:hover,
+.delete-btn:focus,
+.delete-btn:active,
+.delete-btn.active,
+.open .dropdown-toggle.delete-btn {
+  background-color: #c9302c;
+  border-color: #ac2925;
+}
