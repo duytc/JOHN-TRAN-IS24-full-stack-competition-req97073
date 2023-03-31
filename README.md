@@ -13,13 +13,13 @@ To run this application, you will need:
 # Installation
 
 1. Clone the repository:
-    git clone [repo-url]
+    `git clone [repo-url]`
 
 2. Change into the project directory:
-    cd [project-name]
+    `cd [project-name]`
 
 3. Run the following command to start the application:
-    docker-compose up -d
+    `docker-compose up -d`
 
 If you encounter any issues with port 80 being busy, please stop the process that is running on port 80 and rerun the above command.
 
